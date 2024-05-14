@@ -1,0 +1,285 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Chakra Petch", sans-serif;
+    
+    
+}
+.header{
+    background-color: #393E46;
+    
+}
+body{
+    background-color: #FFF5E4;
+    margin: 0;
+    padding: 0;
+    font-family: "Chakra Petch", sans-serif;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 300px;
+
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+    
+}
+.nav-links li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    
+}
+.nav-links li a{
+    color: #FF5722;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #FF5722;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links li:hover::after{
+    width: 100%;
+}
+.nav-links li a.active {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+
+
+
+.logo-container {
+    display: inline-block;
+    position: relative;
+}
+
+.logo-container:hover .logo {
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.logo {
+    width: 300px;
+    height: auto;
+    transition: transform 0.3s ease;
+    position: absolute;
+    top: -50px;
+    left: 0;
+}
+
+@media(max-width:700px){
+    .nav-links li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #FF5722;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+    }
+    .nav-link li{
+        display: block;
+    }
+    .nav-link{
+        position: absolute;
+        background: #FF5722;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+    }
+}
+.text-center{
+    font-weight: bold; 
+    font-size: 25px; 
+    color: #FF5722;
+
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.card-header{
+    background-color: #FFF5E4;
+    color: #FF5722;
+
+
+}
+
+
+.announcement-content {
+    font-family: "Chakra Petch", sans-serif;
+}
+
+.annon{
+    background-color: #393E46;
+}
+.announcement-title {
+    font-size: 4vmin ;
+    font-weight: bold ;
+    color: #FF5722 ;
+    margin: 0 ;
+    font-family: "Chakra Petch", sans-serif;
+    text-align: center;
+}
+.h1{
+    font-size: 4vmin !;
+    font-weight: bold ;
+    color: #FF5722 ;
+    margin: 0 ;
+    font-family: "Chakra Petch", sans-serif;
+    text-align: center;
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.aboutus{
+    font-size: 2vmin;
+    font-weight: bold;
+    color: #FF5722;
+    margin: 100px;
+    font-family: "Chakra Petch", sans-serif;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+}
+
+.imge img {
+    width: 100%
+}
+
+.imge:hover {
+    opacity: 0.7;
+}
+.sub-menu {
+    display: none;
+    position: absolute;
+    background-color: #EEEEEE;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.nav-link.students:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu li {
+    display: block;
+}
+
+.sub-menu .sub-link {
+    padding: 10px;
+    text-decoration: none;
+    color: #FF5722;
+    display: block;
+}
+
+.sub-menu .sub-link:hover {
+    background-color: #EEEEEE;
+}
+
+.faculties {
+    margin-top: 20px;
+}
+.long-text {
+    max-height: 150px;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+.show-more-toggle {
+    display: none;
+}
+
+.show-more-toggle:checked ~ .long-text {
+    max-height: none;
+}
+
+.show-more-label {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.show-more-label:hover {
+    background-color: #0056b3;
+}
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+  }
+  .video-container iframe,
+  .video-container object,
+  .video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .login-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding-top: 100px;
+  }
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100; /* Footer'ın diğer içeriklerin üzerinde olmasını sağlar */
+}
+
+
+p {
+    margin: 0;}
+    @media(max-width: 700px){
+        .nav-links {
+            display: none;
+        }
+        .nav-links.active {
+            display: block;
+        }
+    }
+    
